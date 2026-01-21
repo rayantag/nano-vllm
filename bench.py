@@ -3,6 +3,7 @@ import time
 from random import randint, seed
 from nanovllm import LLM, SamplingParams
 # from vllm import LLM, SamplingParams
+# open sesame
 
 
 def main():
