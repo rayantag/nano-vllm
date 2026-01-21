@@ -2,6 +2,9 @@ import os
 from nanovllm import LLM, SamplingParams
 from transformers import AutoTokenizer
 
+# RT: this is where the APIs are:
+# incl: llm.generate(), 
+
 
 def main():
     path = os.path.expanduser("~/huggingface/Qwen3-0.6B/")
@@ -21,6 +24,8 @@ def main():
         )
         for prompt in prompts
     ]
+
+    # This is the useful main function to understand. takes in prompts and sampling params(temp, max_tokens)
     outputs = llm.generate(prompts, sampling_params)
 
     for prompt, output in zip(prompts, outputs):

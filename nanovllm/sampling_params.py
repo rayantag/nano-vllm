@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+# RT: ok
 
 @dataclass
 class SamplingParams:
