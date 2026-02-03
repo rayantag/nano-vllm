@@ -4,7 +4,9 @@ from itertools import count
 
 from nanovllm.sampling_params import SamplingParams
 
+# The point of this file is to determine how sequences / requests are tracked.
 
+# Categorization of sequences.
 class SequenceStatus(Enum):
     WAITING = auto()
     RUNNING = auto()
